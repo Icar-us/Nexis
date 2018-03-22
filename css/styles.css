@@ -10,9 +10,16 @@
       border-radius: 2px;
     }
 
-    .contG {
-      margin: auto;
-      padding: 70px;
+    a {
+      padding: .7%;
+      display: block;
+      width: max-content;
+      text-decoration-line: none;
+      text-decoration-style: solid;
+    }
+
+    ul {
+      padding-left: 1.15%;
     }
 
     #time, .link, a {
@@ -66,6 +73,11 @@
       z-index: 1;
     }
 
+    .contG {
+      margin: auto;
+      padding: 70px;
+    }
+
     .search {
       position: fixed;
       width: 40%;
@@ -85,9 +97,8 @@
       outline: none;
     }
 
-    .dropbtn {
+    .dropbtn, .boardDrop {
       background-color: rgba(0, 0, 0, 0);
-      background-image: url(find.svg);
       background-repeat: no-repeat;
       color: #fbffbe;
       font-size: 16px;
@@ -95,6 +106,10 @@
       outline: none;
       border: none;
       cursor: pointer;
+    }
+
+    button#find {
+      background-image: url(find.svg);
     }
 
     .dropdown {
@@ -139,10 +154,6 @@
       display: block;
     }
 
-    ul {
-      padding-left: 1.15%;
-    }
-
     .link {
       border-width: medium;
       padding-left: .8%;
@@ -154,21 +165,12 @@
       z-index: 1;
     }
 
-    a {
-      padding: .7%;
-      display: block;
-      width: max-content;
-      text-decoration-line: none;
-      text-decoration-style: solid;
-    }
-
-    .b{
+    .b {
       padding: 5px;
       font-size: 60%;
     }
 
-
-    .b1{
+    .b1 {
       padding: 5px;
       font-size: 80%;
     }
