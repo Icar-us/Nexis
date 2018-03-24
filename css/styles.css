@@ -1,176 +1,66 @@
+/* var */
+:root {
+  --main-h-light: #5eebb8;
+  --back-light: #333;
+  --back-dark: #111;
+  --text: #FFF;
+}
+
+/* elements */
     html {
       font-family: 'Ubuntu';
-      background-color: #222222;
+      background-color: var(--back-dark);
       background-image: url(texbg.png);
+      color: var(--text);
     }
-
-    div, a {
-      color: #fbffbe;
-      background-color: rgba(0, 0, 0, 0);
-      border-radius: 2px;
-    }
-
-    a {
-      padding: .7%;
-      display: block;
-      width: max-content;
-      text-decoration-line: none;
-      text-decoration-style: solid;
-    }
-
-    ul {
-      padding-left: 1.15%;
-    }
-
-    #time, .link, a {
-      overflow: hidden;
-      border-left: solid;
-      border-bottom: solid;
-      border-radius: 0px;
-    }
-
-    #time {
-      padding-left: .6%;
-      width: 46.3%;
-      height: 20%;
-      margin: 0px;
-    }
-
-    #regDate {
-      font-size: 200%;
-      margin: 0%
-    }
-
-    #J1970 {
-      font-size: 10px;
-      float: right;
-      margin-top: .2%;
-      margin-left: .2%;
-      position: absolute;
-    }
-
-    #quote {
-      overflow: hidden;
-      font-size: 70%;
-      width: 15%;
-      margin: auto;
-      padding: 1.7%;
-      text-align: center;
-      float: right;
-    }
-
-    #yt, #google, #duckduckgo {
-      width: 20%;
-      float: left;
-      height: auto;
-    }
-
-    #duckduckgo {
-      height: auto;
-    }
-
-    #find {
-      z-index: 1;
-    }
-
-    .contG {
-      margin: auto;
-      padding: 70px;
-    }
-
-    .search {
-      position: fixed;
-      width: 40%;
-      margin: auto;
-      padding: 21%;
-    }
-
-    #input {
-      color: #fbffbe;
-      width: 90%;
-      text-align: -webkit-center;
-      background-color: #333333;
-      padding: 5.5px 8px;
-      border-style: solid;
-      border-radius: 3px;
-      font-size: 20px;
-      outline: none;
-    }
-
-    .dropbtn, .boardDrop {
-      background-color: rgba(0, 0, 0, 0);
-      background-repeat: no-repeat;
-      color: #fbffbe;
-      font-size: 16px;
-      padding: 18px;
-      outline: none;
-      border: none;
-      cursor: pointer;
-    }
-
-    button#find {
-      background-image: url(find.svg);
-    }
-
-    .dropdown {
-      position: absolute;
-      display: inline-block;
-    }
-
-    .dropdown-content {
-      display: none;
-      position: absolute;
-      background-color: #111111;
-      min-width: 160px;
-      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-      z-index: 1;
-    }
-
-    .dropdown-content .dropdown-cont-button {
-      background-color: rgba(0, 0, 0, 0);
-      border-style: none;
-      color: #fbffbe;
-      width: 100%;
-      text-align: -webkit-center;
+    a.b {
       text-decoration: none;
+      color: var(--text);
+      padding: 15px 10px;
       display: block;
+      width: 100%;
+      background-color: var(--back-light);
     }
 
-    .dropdown-content .dropdown-cont-button:hover {
-      border-style: dotted;
-      border-width: thin;
-      border-color: #fbffbe;
-      background-color: #333333;
+/* accordion */
+    .accordion {
+      background-color: var(--back-light);
+      color: var(--text);
+      cursor: pointer;
+      padding: 18px;
+      width: 100%;
+      border: solid var(--main-h-light) 1px;
+      text-align: left;
+      outline: none;
+      font-size: 15px;
+      transition: 0.4s;
+    }
+    .acc-cont {
+      width: 30%;
     }
 
-    .dropdown:hover .dropdown-content {}
-
-    .dropdown:hover .dropbtn {
-      background-color: rgba(0, 0, 0, 0);
-      border-radius: 4px;
+    .active, .accordion:hover {
+      background-color: var(--main-h-light);
+      color: var(--back-dark);
     }
 
-    .show {
-      display: block;
+    .accordion:after {
+      content: '\002B';
+      color: var(--main-h-light);
+      font-weight: bold;
+      float: right;
+      margin-left: 5px;
     }
 
-    .link {
-      border-width: medium;
-      padding-left: .8%;
+    .active:after {
+      content: "\2212";
+      color: var(--back-dark);
     }
 
-    .link-cont {
-      border-left: solid;
-      position: absolute;
-      z-index: 1;
-    }
-
-    .b {
-      padding: 5px;
-      font-size: 60%;
-    }
-
-    .b1 {
-      padding: 5px;
-      font-size: 80%;
+    .panel {
+      padding: 0 18px;
+      background-color: var(--back-light);
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.2s ease-out;
     }
