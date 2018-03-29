@@ -4,7 +4,9 @@
 <head>
 
   <link class="b" href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
-  <link rel="stylesheet" class="b" href="css/styles.css">
+  <link rel="stylesheet" class="b" href="css/main.css">
+  <link rel="stylesheet" href="css/search.css">
+  <link rel="stylesheet" href="css/accordion.css">
 
   <meta charset="utf-8">
 
@@ -22,42 +24,23 @@
   <script src="js/date.js" charset="utf-8"></script>
 
 
+  <input type="text" id="myInput" onkeyup="lookup()" onclick="popIn()" placeholder="Search for names.." title="Type in a name">
+
+  <ul id="myUL">
+    <div id="results">
+      <li><a href="#">Adele</a></li>
+      <li><a href="#">Agnes</a></li>
+      <li><a href="#">Billy</a></li>
+      <li><a href="#">Bob</a></li>
+      <li><a href="#">Calvin</a></li>
+      <li><a href="#">Christina</a></li>
+      <li><a href="#">Cindy</a></li>
+    </div>
+    <script src="js/search.js" charset="utf-8"></script>
+    <script src="js/pop.js" charset="utf-8"></script>
+  </ul>
+
   <div class="acc-cont">
-    <!--
-<button class="accordion">8chan</button>
-    <div class="panel">
-
-
-
-    </div> -->
-
-    <button class="accordion">Streaming</button>
-    <div class="panel">
-
-      <a class="b" href="https://youtube.com">Youtube</a>
-      <a class="b" href="https://www.rabb.it/">Rabb.it</a>
-
-    </div>
-
-    <button class="accordion">Storage</button>
-    <div class="panel">
-
-      <a class="b" href="https://mega.nz/fm/neJFhISB">MEGA</a>
-      <a class="b" href="https://github.com/Icar-us">Github</a>
-      <a class="b" href="https://docs.google.com/document/u/0/">Docs</a>
-      <a class="b" href="https://drive.google.com/drive/my-drive">Drive</a>
-    </div>
-
-    <button class="accordion">Social</button>
-    <div class="panel">
-
-      <a class="b" href="https://mail.google.com/mail/u/0/#inbox">Gmail</a>
-      <a class="b" href="https://mail.protonmail.com/inbox/">Proton Mail</a>
-      <a class="b" href="https://www.tumblr.com/dashboard">Tumblr</a>
-      <a class="b" href="https://www.pinterest.co.uk">Pinterest</a>
-
-    </div>
-
     <button class="accordion">Development</button>
     <div class="panel">
       <a class="b" href="https://feathericons.com/">Feather Icons</a>

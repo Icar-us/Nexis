@@ -1,0 +1,26 @@
+/* var */
+
+:root {
+  --main-h-light: #5eebb8;
+  --back-light: #333;
+  --back-dark: #111;
+  --text: #FFF;
+}
+
+/* elements */
+
+html {
+  font-family: 'Ubuntu';
+  background-color: var(--back-dark);
+  background-image: url(texbg.png);
+  color: var(--text);
+}
+
+a.b {
+  text-decoration: none;
+  color: var(--text);
+  padding: 15px 10px;
+  display: block;
+  width: 100%;
+  background-color: var(--back-light);
+}

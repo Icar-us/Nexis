@@ -1,0 +1,53 @@
+/* var */
+
+:root {
+  --main-h-light: #5eebb8;
+  --back-light: #333;
+  --back-dark: #111;
+  --text: #FFF;
+}
+
+/* accordion */
+
+.accordion {
+  background-color: var(--back-light);
+  color: var(--text);
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: solid var(--main-h-light) 1px;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.acc-cont {
+  width: 30%;
+}
+
+.active, .accordion:hover {
+  background-color: var(--main-h-light);
+  color: var(--back-dark);
+}
+
+.accordion:after {
+  content: '\002B';
+  color: var(--main-h-light);
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+  color: var(--back-dark);
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: var(--back-light);
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
