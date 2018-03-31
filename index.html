@@ -1,103 +1,89 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+
+<!-- shout out to mpcsh for his simplistic startpage to use while I finish the Development of my own. <3 <3 <3 -->
+<!-- saved from url=(0056)https://startpages.github.io/startpages/mpcsh-startpage/ -->
+<html>
 
 <head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>startpage</title>
+	<link rel="stylesheet" href="./startpage_files/style.css">
 
-  <link class="b" href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
-  <link rel="stylesheet" class="b" href="css/main.css">
-  <link rel="stylesheet" href="css/search.css">
-  <!-- <link rel="stylesheet" href="css/accordion.css"> -->
-  <meta charset="utf-8">
-
-
-
-  <title>Home</title>
 </head>
 
-
 <body>
+	<div class="container">
 
-  <!-- Date -->
-  <p id="regDate"></p>
-  <p style="font-family: monospace;" id="J1970"></p>
-  <script src="js/date.js" charset="utf-8"></script>
+		<div class="favorites">
+			<div class="favorites-list">
+				<ul>
+					<li>
+						<p>Mail</p>
+					</li>
+					<li><a href="https://mail.protonmail.com/">protonmail</a></li>
+					<li><a href="https://inbox.google.com/">gmail</a></li>
+				</ul>
+			</div>
 
+			<div class="favorites-list">
+				<ul>
+					<li>
+						<p>Storage</p>
+					</li>
+					<li><a class="b" href="https://docs.google.com/drive/u/0/">Goggle Drive</a></li>
+					<li><a class="b" href="https://docs.google.com/document/u/0/">Google Docs</a></li>
+					<li><a class="b" href="https://mega.nz/fm/FrhmQZoL">MEGA</a></li>
+				</ul>
+			</div>
 
-  <input type="text" id="myInput" onkeyup="lookup()" onclick="popIn()" placeholder="Search for names.." title="Type in a name">
+			<div class="favorites-list">
+				<ul>
+					<li>
+						<p>Social</p>
+					</li>
+					<li><a class="b" href="https://youtube.com">Youtube</a></li>
+					<li><a class="b" href="https://www.rabb.it/Sol.a.r">Rabb.it</a></li>
+					<li><a class="b" href="https://www.twitch.tv/">Twitch</a></li>
+					<li><a class="b" href="https://www.tumblr.com/dashboard">Tumblr</a></li>
+					<li><a class="b" href="https://www.pinterest.co.uk">Pinterest</a></li>
+				</ul>
+			</div>
 
-  <ul id="myUL">
-    <div id="results">
-      <li><a href="#">Adele</a></li>
-      <li><a href="#">Agnes</a></li>
-      <li><a href="#">Billy</a></li>
-      <li><a href="#">Bob</a></li>
-      <li><a href="#">Calvin</a></li>
-      <li><a href="#">Christina</a></li>
-      <li><a href="#">Cindy</a></li>
-    </div>
-    <script src="js/search.js" charset="utf-8"></script>
-    <script src="js/pop.js" charset="utf-8"></script>
-    <!-- end of search-bar -->
+			<div class="favorites-list">
+				<ul>
+					<li>
+						<p>Programming/Development</p>
+					</li>
+					<li><a class="b" href="https://github.com/Icar-us">Github</a></li>
+					<li><a class="b" href="https://feathericons.com/">Feather Icons</a></li>
+					<li><a class="b" href="https://www.flaticon.com/packs">Flaticon</a></li>
+					<li><a class="b" href="https://thenounproject.com">The Noun Project</a></li>
+					<li><a class="b" href="https://fonts.google.com">Google Fonts</a></li>
+					<li><a class="b" href="https://www.w3schools.com/html/default.asp">w3schools</a></li>
+				</ul>
+			</div>
+		</div>
 
-    <div id="box-cont">
+		<div class="search">
+			<form method="get" action="https://duckduckgo.com/?">
+				<input class="search-box" name="q" type="text" placeholder="search">
+			</form>
+		</div>
 
-      <div class="box">
-        <ul class="links">
-          <span class="label">Social</span>
-          <a class="b" href="https://youtube.com">Youtube</a>
-          <a class="b" href="https://www.rabb.it/Sol.a.r">Rabb.it</a>
-          <a class="b" href="https://www.twitch.tv/">Twitch</a>
-          <a class="b" href="https://www.tumblr.com/dashboard">Tumblr</a>
-          <a class="b" href="https://www.pinterest.co.uk">Pinterest</a>
-        </ul>
-      </div>
+	</div>
 
-
-      <div class="box">
-        <ul class="links">
-          <span class="label">Programming</span>
-          <a class="b" href="https://github.com/Sol-a-r">Github</a>
-          <a class="b" href="https://feathericons.com/">Feather Icons</a>
-          <a class="b" href="https://www.flaticon.com/packs">Flaticon</a>
-          <a class="b" href="https://thenounproject.com">The Noun Project</a>
-          <a class="b" href="https://fonts.google.com">Google Fonts</a>
-          <a class="b" href="https://www.w3schools.com/html/default.asp">w3schools</a>
-
-        </ul>
-      </div>
-
-
-      <div class="box">
-
-        <ul class="links">
-          <span class="label">Mail</span>
-          <a class="b" href="https://mail.google.com/mail/u/0/#inbox">Gmail</a>
-          <a class="b" href="https://protonmail.com">Proton Mail</a>
-        </ul>
-      </div>
-
-
-      <div class="box">
-        <ul class="links">
-          <span class="label">Storage</span>
-          <a class="b" href="https://docs.google.com/drive/u/0/">Docs</a>
-          <a class="b" href="https://docs.google.com/document/u/0/">Docs</a>
-          <a class="b" href="https://mega.nz/fm/FrhmQZoL">MEGA</a>
-        </ul>
-      </div>
-
-
-      <div class="box">
-        <ul class="links">
-          <span class="label">Label</span> links
-        </ul>
-      </div>
-
-
-
-
-    </div>
 
 </body>
 
 </html>
+
+
+<!--
+<div class="favorites-list">
+	<ul>
+		<li>
+			<p></p>
+		</li>
+
+	</ul>
+</div> -->
