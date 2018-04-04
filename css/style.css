@@ -39,6 +39,7 @@ body {
 	width: 30rem;
 	padding: 0.5rem;
 	border: 1px solid #b5b5a4;
+	display: inherit;
 }
 
 .search-box {
@@ -104,4 +105,20 @@ ul > li > a:hover {
 
 #J1970 {
 font-family: 'Ubuntu Mono', monospace;
+}
+
+.goto {
+	background-color: #222222;
+	color: #b5b5a4;
+	border: solid 1px #b5b5a4;
+}
+
+.goto:hover {
+	color: #222222;
+	background-color: #b5b5a4;
+}
+
+input:-webkit-autofill {
+	color: #222222 !important;
+	background-color: #b5b5a4 !important;
 }

@@ -10,10 +10,10 @@
 	<link rel="stylesheet" href="./css/style.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 	<script src="js/date.js" charset="utf-8"></script>
+	<script src="js/goto.js" charset="utf-8"></script>
 </head>
 
 <body>
-
 
 	<div class="container">
 
@@ -72,13 +72,31 @@
 					<li><a class="b" href="https://www.w3schools.com/html/default.asp">w3schools</a></li>
 				</ul>
 			</div>
+
+			<div class="favorites-list">
+				<ul>
+					<li>
+						<p>Imageboards</p>
+					</li>
+						<li><a class="b" href="https://4chan.org">4chan</a></li>
+						<li><a class="b" href="https://8ch.net">8chan</a></li>
+				</ul>
+			</div>
 		</div>
+
+
 
 		<div class="search">
 			<form method="get" action="https://duckduckgo.com/?">
-				<input class="search-box" name="q" type="text" placeholder="search" autofocus="true">
+				<input class="search-box" name="q" type="text" placeholder="search" autocomplete="off" autofocus="true">
 			</form>
 		</div>
+
+<div class="search">
+
+	<input class="search-box" type="text" name="URL" id="URL" autocomplete="off" placeholder="URL">
+	<button class="goto" type="button" onclick="goto()" name="button">Go</button>
+</div>
 
 
 
@@ -91,7 +109,6 @@
 	<ul>
 		<li>
 			<p></p>
-		</li>
-
-	</ul>
-</div> -->
+		</li></ul>
+</div>
+ -->
